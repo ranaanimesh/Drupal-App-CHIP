@@ -34,7 +34,7 @@ variable "instance_size" {
 variable "vpc_id" {
   type        = string
   description = "VPC ID that Drupal app will be deployed into"
-  default     = "vpc-0ebb44d212c94dae4"
+  default     = "vpc-0ba870f2ed28213aa"
 }
 
 variable "route53_hosted_zone_name" {

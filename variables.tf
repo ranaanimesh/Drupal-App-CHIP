@@ -4,7 +4,7 @@
 variable "friendly_name_prefix" {
   type        = string
   description = "String value for freindly name prefix for AWS resource names and tags"
-  default     = "dcbear"
+  default     = "partsunlimited"
 }
 
 variable "common_tags" {
@@ -49,19 +49,19 @@ variable "route53_hosted_zone_name" {
 variable "alb_subnet_ids" {
   type        = list(string)
   description = "List of subnet IDs to use for Application Load Balancer (ALB)"
-  default     = ["subnet-0b44402b66af200ac", "subnet-00d706293e371e0d2"]
+  default     = ["subnet-02db707b414471517", "subnet-0085d030eb13c24a4"]
 }
 
 variable "ec2_subnet_ids" {
   type        = list(string)
   description = "List of subnet IDs to use for EC2 instance - preferably private subnets"
-  default     = ["subnet-042cbf2b9863bdf4e", "subnet-0e30a970892d18361"]
+  default     = ["subnet-08b6ab1e446a45eee", "subnet-016b31bd42985acc1"]
 }
 
 variable "rds_subnet_ids" {
   type        = list(string)
   description = "Subnet IDs to use for RDS Database Subnet Group - preferably private subnets"
-  default     = ["subnet-042cbf2b9863bdf4e", "subnet-0e30a970892d18361"]
+  default     = ["subnet-08b6ab1e446a45eee", "subnet-016b31bd42985acc1"]
 }
 
 variable "rds_storage_capacity" {

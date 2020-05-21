@@ -4,7 +4,7 @@
 variable "friendly_name_prefix" {
   type        = string
   description = "String value for freindly name prefix for AWS resource names and tags"
-  default     = "partsunlimited"
+  default     = "animesh"
 }
 
 variable "common_tags" {

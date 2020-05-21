@@ -3,6 +3,7 @@ terraform {
   required_providers {
     aws = "~> 2.62"
   }
+}
 
 provider "aws" {
   region  = "us-west-1"

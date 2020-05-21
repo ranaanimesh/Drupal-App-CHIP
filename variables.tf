@@ -40,7 +40,7 @@ variable "vpc_id" {
 variable "route53_hosted_zone_name" {
   type        = string
   description = "Route53 Hosted Zone where Drupal Alias Record and Certificate Validation record will reside (required if tls_certificate_arn is left blank)"
-  default     = "nukdcbear.com"
+  default     = "animeshpartsunlimited.com"
 }
 
 ################################################
@@ -118,7 +118,7 @@ variable "kms_key_arn" {
 variable "ec2_ecs_ssh_key_pair" {
   type        = string
   description = "Name of SSH key pair for Drupal EC2 instance"
-  default     = "dcb-us-west-1"
+  default     = "terraform_vm"
 }
 
 ################################################
@@ -127,5 +127,5 @@ variable "ec2_ecs_ssh_key_pair" {
 variable "drupal_hostname" {
   type        = string
   description = "Hostname of Drupal instance"
-  default     = "myapp.nukdcbear.com"
+  default     = "app.animeshpartsunlimited.com"
 }

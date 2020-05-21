@@ -118,7 +118,7 @@ variable "kms_key_arn" {
 variable "ec2_ecs_ssh_key_pair" {
   type        = string
   description = "Name of SSH key pair for Drupal EC2 instance"
-  default     = "terraform_vm"
+  default     = "terraform_ec2"
 }
 
 ################################################
